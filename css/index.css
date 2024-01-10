@@ -1,0 +1,72 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+li {
+   list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 가로 1200px */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!-- 헤더 --> */
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.header-inner {
+    /* 로고와 네비 위아래 간격 */
+    padding: 20px 0;
+}
+/* 로고 */
+.logo {
+    width: 200px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* 네비 */
+.top-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+.top-menu li {
+    padding-left: 5%;
+}
+
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!-- 메인 --> */
+    /* <!-- 사진 --> */
+    .main-bg{
+        width: 100%;
+        height: 900px;
+        background: url("../images/main-bg.png") no-repeat center;
+    }
+    /* <!-- 텍스트  Asia’s top-tier startup accelerator --> */
+    /* <!-- 아래버튼 --> */
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!-- 섹션1 ACCELERATOR COMPANY--> */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!-- 섹션2 We Climb Together--> */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!-- 섹션3 since 2023 --> */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!-- 섹션4 뉴스 비디오 --> */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!-- 풋터 --> */
