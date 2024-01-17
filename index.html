@@ -4,7 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>koreaInvestment-cloneCoding</title>
-    <link rel="stylesheet" href="css/0115.css" />
+
+
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- aos코드 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+    <!-- jquery적용 -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <!-- aos코드 -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <!-- 버튼 내려갈 때 코드 -->
+    <script src="js/down.js"></script>
+    
+
   </head>
 
   <body>
@@ -20,13 +44,25 @@
               <img src="images/nav-logo1111.png" alt="로고" class="logo111" />
             </a>
           </div>
-          <!-- 햄버거  -->
-          <button class="menu-toggle-btn">
-            <i class="fas fa-bars"></i>
-          </button>
           <!-- 네비 -->
           <nav>
-            <ul class="top-menu">
+            <ul class="main-menu">
+              <li><a href="#">about</a></li>
+              <li><a href="#">investment</a></li>
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">program</a></li>
+              <li><a href="#">team</a></li>
+              <li><a href="#">insight</a></li>
+            </ul>
+            <!-- 햄버거  -->
+            <button class="menu-toggle-btn">
+              <i class="fas fa-bars"></i>
+            </button>
+            <!-- 햄버거 누르면 나오는 메뉴 -->
+            <ul class="main-menu1">
+              <!-- <button class="menu-toggle-btn-close">
+                <i class="fa-solid fa-x"></i>
+              </button> -->
               <li><a href="#">about</a></li>
               <li><a href="#">investment</a></li>
               <li><a href="#">portfolio</a></li>
@@ -42,7 +78,7 @@
       <main>
         <div class="main-inner container">
           <!-- 텍스트  Asia’s top-tier startup accelerator -->
-          <h2 class="top-tier">
+          <h2 class="top-tier" data-aos="fade-up">
             Asia’s<br />
             top-tier<br />
             startup accelerator
@@ -56,10 +92,10 @@
     </div>
 
     <!-- 섹션1 ACCELERATOR COMPANY-->
-    <div class="section-01">
+    <div class="section-01" id="section-01">
       <div class="section-01-inner container">
-        <h3>ACCELERATOR COMPANY</h3>
-        <img src="images/plus-bt.png" alt="플러스버튼" />
+        <h3 data-aos="fade-up">ACCELERATOR COMPANY</h3>
+        <i class="fa-thin fa-plus"></i>
         <p>
           Accelerator(액셀러레이터)와 Company(스타트업)은<br />
           함께 도달하고자 하는 목표가 같습니다.<br />
@@ -75,7 +111,8 @@
     <div class="section-02">
       <div class="section-02-inner container">
         <h3>We Climb Together</h3>
-        <div class="arrow-bg">
+        <div class="arrow-bg" data-aos="fade-up"
+        data-aos-duration="1000">
           <img src="images/arrow.png" alt="화살표" />
         </div>
       </div>
@@ -172,7 +209,6 @@
         </ul>
       </div>
     </div>
-
 
     <!-- 섹션4 뉴스 비디오 -->
     <div class="section-04">
