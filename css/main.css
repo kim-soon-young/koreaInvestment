@@ -1,9 +1,11 @@
 @charset "utf-8";
+@import url("pretendard-font.css");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "pretendard", sans-serif;
 }
 li {
   list-style: none;
@@ -15,6 +17,13 @@ a {
 i {
   font-style: normal;
 }
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.3rem;
+}
+
 /* <!-- 배경사진 --> */
 .main-bg {
   width: 100%;
@@ -24,7 +33,7 @@ i {
 }
 h3 {
   padding: 150px 0;
-  font-size: 60px;
+  font-size: 6rem;
   color: white;
 }
 /* 가로 1200px */
@@ -97,7 +106,7 @@ nav {
   color: white;
   text-transform: capitalize;
   display: block;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 /* <!-- 아래버튼 --> */
 .btn-down {
@@ -109,12 +118,19 @@ nav {
   height: 55px;
 }
 
+
+
+
+/* 섹션 전체 */
+
+.section {
+  background-color: #161822;
+}
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 <!-- 섹션1 ACCELERATOR COMPANY--> */
 
 .section-01 {
   width: 100%;
-  background-color: #161822;
   text-align: center;
 }
 
@@ -131,8 +147,8 @@ nav {
 
 .section-01-inner p {
   color: white;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 500;
   padding: 100px 0;
   line-height: 1.5;
 }
@@ -141,37 +157,34 @@ nav {
 <!-- 섹션2 We Climb Together--> */
 .section-02 {
   width: 100%;
-  background-color: #161822;
   text-align: center;
-  position: relative;
 }
-.section-02
+
+.section-02 .arrow-bg img {
+  height: 400px;
+}
 
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 <!-- 섹션3 since 2023 --> */
-.section-03 {
-  background-color: #161822;
-}
+
 .section-03-inner h4 {
   color: #505050;
   display: flex;
   justify-content: center;
   padding: 65px 0;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .investment-area-1 {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  width: 100%;
   padding: 0 20px 100px 20px;
 }
 .investment-area-1 .top {
   display: flex;
-  font-size: 18px;
+  font-size: 1.8rem;
   justify-content: center;
   color: #fff;
   text-align: center;
@@ -185,10 +198,10 @@ nav {
 }
 .investment-area-1 .left {
   color: #8fb3e2;
-  font-size: 60px;
+  font-size: 6rem;
 }
 .investment-area-1 .right {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
 }
@@ -203,7 +216,7 @@ nav {
 
 /* news video 타이틀 */
 .insight-title {
-  font-size: 45px;
+  font-size: 4.5rem;
   font-weight: 700;
   padding: 100px 0 35px 0;
 }
@@ -211,17 +224,14 @@ nav {
 /* 뉴스 */
 .news {
   display: flex;
+  gap :10px;
   background-color: pink;
   justify-content: space-between;
 }
 .news li {
-  width: 32%;
-  background-color: #fff;
-  box-shadow: #161822;
+    background-color: #fff;
 }
-.news li:nth-child(2) {
-  margin: 0px 1%;
-}
+
 .news li a {
   width: 100%;
 }
@@ -231,7 +241,7 @@ nav {
   height: 200px;
 }
 .news-item-title {
-  font-size: 22px;
+  font-size: 2.2rem;
   padding: 10px;
 }
 .news-item-date {
@@ -248,7 +258,6 @@ nav {
 .video li {
   width: 50%;
   background-color: #fff;
-  box-shadow: #161822;
 }
 .video li:last-child {
   margin-left: 1%;
@@ -259,6 +268,7 @@ nav {
 .video li img {
   display: block;
   width: 100%;
+  object-fit: cover;
 }
 .video-item-title {
   font-size: 26px;
@@ -276,7 +286,7 @@ nav {
   border: 1px solid #21314b;
   color: #21314b;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
   height: 52px;
   width: 297px;
@@ -307,7 +317,7 @@ footer {
   display: flex;
   justify-content: space-between;
   color: #404040;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .footer-list li {

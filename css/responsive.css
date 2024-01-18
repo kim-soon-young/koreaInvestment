@@ -1,18 +1,23 @@
 @media all and (max-width: 1200px) {
+  
+  html {
+    font-size: 8px;
+  }
+
   header{
-      padding: 10px;
       padding: 10px 20px;
   }
+  /* 이렇게 해줘야 네비가 풀어짐 */
   .container {
     width: 100%;
-    padding
+    padding: 10px 20px;
   }
 
   .top-tier{
     text-align: right;
-    font-size: 80px;
+    font-size: 8rem;
     color: white;
-    padding : 80px 50px 0 0;
+    padding : 150px 5% 0 0;
   }
   .logo a .logo111 {
     display: block;
@@ -24,10 +29,27 @@
   .main-menu1{
     display: none;
   }
+
+
+
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
+  .new li {
+    width: 50%;
+  }
+  .news li:last-child {
+    display: none;
+  }
+
+
   
+
+
+
+}
+
+@media all and (max-width: 767px) {
 /* 메뉴 */
 .main-menu{
   display: none;
@@ -44,18 +66,24 @@
 /* 햄버거 누를 때 나오는 메뉴 */
   .main-menu1 {
     display: block;
-    width: 40%;
+    width: 250px;
     height: 100%;
+     /* 처음에는 메뉴를 오른쪽 화면 밖으로 위치시켜라 */
+    position: fixed;
+    top: 0;
+    right: 250px;
+ /* 오른쪽에 있던 메뉴를 메인 메뉴에 나타내라 */
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /* 메인 사진글씨보다 위로가라. */
+    z-index: 2;
+
     background-color: whitesmoke;
-    position: absolute;
-    top: 0px;
-    right: 0;
     padding: 20px 25px;
-display: none;
-text-transform: uppercase;
-text-align: left;
-font-weight: 600;
-z-index: 999;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
   }
   .main-menu1 a {
     color: #000;
@@ -64,23 +92,48 @@ z-index: 999;
     font-weight: 900;
   }
 
-  
-/* 햄버거 눌러서 X표시
-.menu-toggle-btn-close {
-  font-size: 20px;
-  margin-top: 85px;
-  padding: 10px;
-  border: none;
-}
-  */
 
-
-  .footer-top {
+  /* <!-- 섹션4 뉴스 비디오 --> */
+  .investment-area-1 {
+    width: 100%;
     display: flex;
-    align-items: center;
-  }
-  .list04,.list03 {
-    display: none;
-  }
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.investment-area-1 li {
+  padding: 20px;
+}
 
+
+
+/* 풋터 */
+
+
+.footer-top{
+  flex-wrap: wrap;
+}
+.footer-list{
+  padding-top:50px;
+}
+
+}
+
+
+
+@media all and (max-width: 500px) {
+
+  /* <!-- 섹션4 뉴스 비디오 --> */
+  .investment-area-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+}
+
+@media all and (max-width: 430px) {
+  html {
+    font-size: 6px;
+  }
 }
