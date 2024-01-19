@@ -1,7 +1,7 @@
 @media all and (max-width: 1200px) {
   
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   header{
@@ -49,7 +49,7 @@
 
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 770px) {
 /* 메뉴 */
 .main-menu{
   display: none;
@@ -110,17 +110,45 @@
 
 
 .footer-top{
-  flex-wrap: wrap;
+  display: block;
+  text-align: center;
 }
 .footer-list{
-  padding-top:50px;
+  padding-top:30px;
+}
+.footer-list li {
+  display: flex;
+  justify-content: flex-start;
 }
 
+
+}
+@media all and (max-width: 700px) {
+
+
+
+  /* 챕터4 */
+  .news {
+    flex-wrap: wrap;
+  }
+  .news li img {
+    height: auto;
+}
+/* news video 타이틀 */
+.insight-title {
+  font-size: 3.8rem;
+}
+.news-item-title {
+  font-size: 1.8rem;
+}
 }
 
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 520px) {
+  .top-tier{
+    font-size: 6rem;
+  }
 
   /* <!-- 섹션4 뉴스 비디오 --> */
   .investment-area-1 {
@@ -129,11 +157,22 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+.footer-list {
+  display: none;
+}
 
 }
 
 @media all and (max-width: 430px) {
   html {
-    font-size: 6px;
+    font-size: 9px;
   }
+  h3 {
+    font-size: 4rem;
+    padding: 150px 0 50px;
+}
+.section-01-inner p {
+  font-size: 2rem;
+  font-weight: 100;
+
 }
