@@ -27,7 +27,7 @@ body {
 /* <!-- 배경사진 --> */
 .main-bg {
   width: 100%;
-  height: 900px;
+  /* height: 900px; */
   background: url("../images/main-bg.png") no-repeat center;
   background-size: cover;
 }
@@ -51,6 +51,7 @@ header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 99;
+  position: fixed;
 }
 .header-inner {
   display: flex;
@@ -106,7 +107,7 @@ nav {
   color: white;
   text-transform: capitalize;
   display: block;
-  padding-top: 150px;
+  padding-top: 20rem;
 }
 /* <!-- 아래버튼 --> */
 .btn-down {
@@ -125,6 +126,7 @@ nav {
 
 .section {
   background-color: #161822;
+  padding-bottom: 5rem;
 }
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 <!-- 섹션1 ACCELERATOR COMPANY--> */
@@ -242,7 +244,7 @@ nav {
 }
 
 .news-item-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 10px;
 }
 .news-item-date {
@@ -288,7 +290,7 @@ nav {
   font-size: 1.8rem;
   font-weight: 700;
   height: 52px;
-  width: 297px;
+  width: 25rem;
   margin: 127px auto;
   line-height: 52px;
   text-align: center;
