@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>koreaInvestment-cloneCoding</title>
-
+    <!-- 파비콘 -->
+    <link rel="icon" size="16x16" href="images/favicon.png" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- 폰트어썸 -->
     <link
@@ -23,11 +24,17 @@
     <!-- aos코드 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+
     <!-- 버튼 내려갈 때 코드 -->
+
     <script src="js/down.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/navColor.js"></script>
   </head>
 
   <body>
+    <div id="overlay"></div>
+
     <!-- 배경사진 -->
     <div class="main-bg">
       <!-- 헤더 -->
@@ -87,7 +94,7 @@
     <!-- 섹션1 ACCELERATOR COMPANY-->
     <div class="section-01 section" id="section-01">
       <div class="section-01-inner container">
-        <h3>ACCELERATOR<br>COMPANY</h3>
+        <h3>ACCELERATOR<br />COMPANY</h3>
         <i class="fa-thin fa-plus"></i>
         <p data-aos="fade-up" data-aos-duration="3000">
           Accelerator(액셀러레이터)와 Company(스타트업)은<br />
@@ -103,7 +110,7 @@
     <!-- 섹션2 We Climb Together-->
     <div class="section-02 section">
       <div class="section-02-inner container">
-        <h3>
+        <h3 clas="arrow-motion">
           We Climb Together
           <div class="arrow-bg" data-aos="fade-up" data-aos-duration="1000">
             <img src="images/arrow.png" alt="화살표" />
@@ -214,8 +221,10 @@
             <a href="#">
               <img src="images/news-3.jpg" alt="뉴스사진" />
             </a>
-            <div class="news-item-title">
-              "패션산업에 순환경제 심는다"…민트컬렉션, 중기부 팁스 선정"
+            <div class="news-item">
+              <div class="news-item-title">
+                "패션산업에 순환경제 심는다"…민트컬렉션, 중기부 팁스 선정"
+              </div>
               <div class="news-item-date">2023-12-29</div>
             </div>
           </li>
@@ -223,9 +232,10 @@
             <a href="#">
               <img src="images/news-2.jpg" alt="뉴스사진" />
             </a>
-            <div class="news-item-title">
-              "상상 못했던 마케팅·커머스가 온다…AI 기술 접목 어디까지?
-            "
+            <div class="news-item">
+              <div class="news-item-title">
+                "패션산업에 순환경제 심는다"…민트컬렉션, 중기부 팁스 선정"
+              </div>
               <div class="news-item-date">2023-12-29</div>
             </div>
           </li>
@@ -233,9 +243,10 @@
             <a href="#">
               <img src="images/news-1.jpg" alt="뉴스사진" />
             </a>
-            <div class="news-item-title">
-              "AR 게임으로 발달장애 아동 재활…잼잼테라퓨틱스, 시드투자 유치
-            "
+            <div class="news-item">
+              <div class="news-item-title">
+                "패션산업에 순환경제 심는다"…민트컬렉션, 중기부 팁스 선정"
+              </div>
               <div class="news-item-date">2023-12-29</div>
             </div>
           </li>
@@ -246,18 +257,20 @@
           <li>
             <a href="#">
               <img src="images/video-1.jpg" alt="" />
-              <div class="news-item-title">
-                "
-                AR 게임으로 발달장애 아동 재활…잼잼테라퓨틱스, 시드투자 유치
-              "
+              <div class="news-item">
+                <div class="news-item-title">
+                  " AR 게임으로 발달장애 아동 잼잼테라퓨틱스, 시드투자 유치 "
+                </div>
               </div>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="images/video-2.jpg" alt="" />
-              <div class="news-item-title">
-                "패션산업에 순환경제 심는다"…민트컬렉션, 중기부 팁스 선정"
+              <div class="news-item">
+                <div class="news-item-title">
+                  "패션산업에 순환경제 심는다" 민트컬렉션, 중기부 팁스 선정"
+                </div>
               </div>
             </a>
           </li>
