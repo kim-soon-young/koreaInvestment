@@ -20,12 +20,6 @@
     padding: 10px 20px;
   }
 
-  .top-tier {
-    text-align: right;
-    font-size: 8rem;
-    color: white;
-    padding: 150px 5% 0 0;
-  }
   .logo a .logo111 {
     display: block;
     width: 100px;
@@ -36,14 +30,22 @@
   .main-menu1 {
     display: none;
   }
-
-  /* <!-- 섹션4 뉴스 비디오 --> */
-  .investment-area-1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  .main-menu li a {
+    font-size: 1.4rem;
+    padding: 0 0 0 30px;
   }
+
+   /* <!-- 섹션1 --> */   
+  .top-tier {
+    text-align: right;
+    font-size: 8rem;
+    color: white;
+    padding: 230px 5% 0 0;
+  }
+
+
+
+
 }
 
 @media all and (max-width: 1000px) {
@@ -159,18 +161,23 @@
     font-size: 1.8rem;
   }
   /* <!-- 섹션4 뉴스 비디오 --> */
-  .investment-area-1 {
-    display: flex;
-    gap: 30px;
+  .investment-area-1 .top {
+    font-size: 1.4rem;
   }
-  .investment-area-1 li {
-    flex-basis: 100%;
+  .investment-area-1 .left {
+    font-size: 4rem;
   }
+.investment-area-1 .right {
+    font-size: 2rem;
+}
 }
 
 @media all and (max-width: 520px) {
   .top-tier {
     font-size: 6rem;
+  }
+  .btn-down {
+      padding: 50px 0 100px;
   }
   /* 섹션1  */
   .section-01-inner p {
@@ -235,5 +242,17 @@
   .footer-list .list {
     flex-basis: calc(50% - 10px);
     margin: 5px;
+  }
+}
+
+
+@media all and (max-width: 430px) {
+.container{
+  padding: 10px;
+}
+
+  .investment-area-1 {
+    padding: 0 0px 20px 0px;
+    gap: 10px;
   }
 }
