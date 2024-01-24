@@ -1,3 +1,4 @@
+
 @media all and (max-width: 1300px) {
   .top-tier {
     padding-right: 20px;
@@ -185,6 +186,7 @@
   }
 }
 
+
 @media all and (max-width: 480px) {
   /* 풋터 */
   .footer-list {
@@ -249,6 +251,11 @@
 @media all and (max-width: 430px) {
 .container{
   padding: 10px;
+}
+.popup-button {
+  font-size: 15px;
+  height: 50px;
+  gap:2px;
 }
 
   .investment-area-1 {

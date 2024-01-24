@@ -6,6 +6,7 @@
     <title>koreaInvestment-cloneCoding</title>
     <!-- 파비콘 -->
     <link rel="icon" size="16x16" href="images/favicon.png" />
+       <!-- 내가 작성한 css -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- 폰트어썸 -->
     <link
@@ -23,13 +24,9 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- aos코드 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 내가 작성한 js -->
     <script src="js/main.js"></script>
-
-    <!-- 버튼 내려갈 때 코드 -->
-
-    <script src="js/down.js"></script>
-    <script src="js/overlay.js"></script>
-    <script src="js/navColor.js"></script>
+    <script src="js/close.js"></script>
   </head>
 
   <body>
@@ -37,18 +34,16 @@
         <div class="modal-wrap">
           <div class="modal-main">
             <div class="modal-nonotic">
-              <!-- <img src="popupimg.png" alt="팝업이미지" /> -->
+              <img src="../images/popupimg.png" alt="팝업이미지" />
             </div>
             <div class="popup-button-area">
               <div class="popup-button" style="background-color: #e4f277">
                 자세한 내용 확인하기
               </div>
-              <div class="popup-button modal-close">
+              <div class="popup-button popup-close">
                 <div class="close-modal">닫기</div>
                 <div class="close-today">
-                  <input type="checkbox" id="no-show" /><a href=""
-                    >오늘 하루 보지않기</a
-                  >
+                  <input type="checkbox" id="no-show" /><a href="">오늘 하루 보지않기</a>
                 </div>
               </div>
             </div>
