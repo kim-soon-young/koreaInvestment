@@ -21,14 +21,13 @@ html {
   font-size: 12px;
 }
 body {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
 }
 
 /* <!-- 배경사진 --> */
 .main-bg {
   width: 100%;
   background: url("../images/main-bg.png") no-repeat center;
-  background-size: cover;
 }
 
 h3 {
@@ -44,75 +43,6 @@ h3 {
 .menu-toggle-btn {
   display: none;
 }
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-안내창 */
-
-.modal-wrap {
-  background-color: rgba(0, 0, 0, 0.5);
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  z-index: 999;
-  align-items: center;
-}
-
-.modal-main {
-  max-width: 500px; /* 최대 가로 너비 500px로 설정 */
-  width: 90%; /* 추가: 화면의 90%까지 차지하도록 설정 */
-  position: relative;
-}
-
-.modal-nonotic img {
-  max-width: 100%;
-  height: auto;
-}
-
-.popup-button-area {
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.popup-button {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  flex: 1;
-  font-weight: 700;
-  height: 60px;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  flex-direction: column;
-  font-size: 20px;
-  color: #212529;
-  gap: 5px;
-}
-
-.popup-close {
-  display: flex;
-  align-items: center;
-}
-
-.popup-close .close-today {
-  display: flex;
-  align-items: center;
-}
-.popup-close .close-today input {
-  width: 10px;
-  height: 10px;
-}
-.close-today a {
-  font-size: 10px;
-  margin-left: 5px;
-  color: #a2a2a2;
-}
-
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 <!-- 헤더 --> */
 header {
