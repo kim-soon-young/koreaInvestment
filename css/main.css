@@ -60,7 +60,7 @@ h3 {
 }
 
 .modal-main {
-  width: 500px; /* 최대 가로 너비 500px로 설정 */
+  max-width: 500px; /* 최대 가로 너비 500px로 설정 */
   height: 500px;
   position: relative;
 }
@@ -186,7 +186,7 @@ nav {
 /* <!-- 아래버튼 --> */
 .btn-down {
   width: 100%;
-  padding: 100px 0;
+  padding: 150px 0 0;
 }
 .btn-down img {
   width: 55px;

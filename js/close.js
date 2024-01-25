@@ -1,3 +1,4 @@
+//오늘 하루 보이지 않음
 document.addEventListener("DOMContentLoaded", function () {
   const modalWrap = document.querySelector(".modal-wrap");
   const closeModalButton = document.querySelector(".close-modal");

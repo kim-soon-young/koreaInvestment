@@ -40,13 +40,13 @@
     text-align: right;
     font-size: 8rem;
     color: white;
-    padding: 230px 5% 0 0;
+    padding: 150px 5% 0 0;
   }
 }
 
 @media all and (max-width: 1000px) {
   /* <!-- 섹션4 뉴스 비디오 --> */
-  .new li {
+  .news li {
     width: 50%;
   }
 
@@ -78,13 +78,24 @@
   }
 }
 
-
 @media all and (max-width: 770px) {
-/* 안내창 */
+  /* 안내창 */
   .modal-main {
     width: 90%; /* 예시로 90%로 설정, 필요에 따라 조절 가능 */
     height: auto; /* 높이 자동 조절 */
     max-width: 500px; /* 최대 가로 너비 500px로 유지 */
+
+    /* 수정된 부분 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .popup-button-area {
+    margin-top: -3px; /* 이미지와의 간격을 없애기 위해 음수 마진 설정 */
+  }
+  .modal-nonotic {
+    flex: 1; /* 나머지 공간을 모두 차지하도록 설정 */
   }
   /* 메뉴 */
   .main-menu {
@@ -178,9 +189,6 @@
 @media all and (max-width: 520px) {
   .top-tier {
     font-size: 6rem;
-  }
-  .btn-down {
-    padding: 50px 0 100px;
   }
   /* 섹션1  */
   .section-01-inner p {
