@@ -44,6 +44,77 @@ h3 {
   display: none;
 }
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+안내창 */
+.modal-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-main {
+  width: 500px; /* 최대 가로 너비 500px로 설정 */
+  height: 500px;
+  position: relative;
+}
+.modal-nonotic {
+  width: 100%;
+  height: 100%;
+}
+.modal-nonotic img {
+  width: 100%;
+  height: 100%;
+}
+.popup-button-area {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.popup-button {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  font-weight: 700;
+  height: 60px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+  font-size: 20px;
+  color: #212529;
+  gap: 5px;
+}
+
+.popup-close {
+  display: flex;
+  align-items: center;
+}
+
+.popup-close .close-today {
+  display: flex;
+  align-items: center;
+}
+.popup-close .close-today input {
+  width: 10px;
+  height: 10px;
+}
+.close-today a {
+  font-size: 10px;
+  margin-left: 5px;
+  color: #a2a2a2;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 <!-- 헤더 --> */
 header {
   width: 100%;

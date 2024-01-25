@@ -78,7 +78,14 @@
   }
 }
 
+
 @media all and (max-width: 770px) {
+/* 안내창 */
+  .modal-main {
+    width: 90%; /* 예시로 90%로 설정, 필요에 따라 조절 가능 */
+    height: auto; /* 높이 자동 조절 */
+    max-width: 500px; /* 최대 가로 너비 500px로 유지 */
+  }
   /* 메뉴 */
   .main-menu {
     display: none;
