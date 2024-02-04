@@ -1,4 +1,3 @@
-//오늘 하루 보이지 않음
 document.addEventListener("DOMContentLoaded", function () {
   const modalWrap = document.querySelector(".modal-wrap");
   const closeModalButton = document.querySelector(".close-modal");
@@ -28,13 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault(); // 링크 클릭의 기본 동작 방지
 
     if (noShowCheckbox.checked) {
-      setCookie("popupClosed", "true", 1); // Cookie expires in 1 day
+      setCookie("popup-close", "true", 1); // Cookie expires in 1 day
     }
 
     closeModal();
   });
 
   // 페이지 로드 시 쿠키 확인하여 모달 노출 여부 결정
-  const isOpen = getCookie("popupClosed") !== "true";
+  const isOpen = getCookie("popup-close") !== "true";
   modalWrap.style.display = isOpen ? "flex" : "none";
 });

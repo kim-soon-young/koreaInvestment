@@ -299,7 +299,6 @@ nav {
   display: flex;
   gap: 10px;
   justify-content: space-between;
-  /* word-break: keep-all; */
 }
 .news li {
   background-color: #fff;
