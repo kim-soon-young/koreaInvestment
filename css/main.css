@@ -395,6 +395,7 @@ footer {
   justify-content: space-between;
   color: #404040;
   font-size: 1.3rem;
+  gap: 10px;
 }
 
 .footer-list li {
